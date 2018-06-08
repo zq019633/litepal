@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/h_back"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="请更新课程"
+        android:textSize="20sp"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/color_ffffff"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="200dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="13dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/ic_mobile_flag" />
+
+            <EditText
+                android:id="@+id/c_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/hint_login_c"
+                android:inputType="textVisiblePassword"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/color_999999"
+                android:textColorHint="@color/color_999999"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/iv_clean_phone"
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_clear"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_eeeeee" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="13dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/ic_password_flag" />
+
+            <EditText
+                android:id="@+id/c_info"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/hint_login_c_info"
+
+                android:maxLength="30"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/color_999999"
+                android:textColorHint="@color/color_999999"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/clean_password"
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_clear"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_show_pwd"
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:scaleType="centerInside"
+                android:src="@mipmap/pass_gone" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_eeeeee" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_eeeeee" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="13dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/ic_password_flag" />
+
+            <EditText
+                android:id="@+id/c_id"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入课程ID（*必填）"
+
+                android:maxLength="30"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/color_999999"
+                android:textColorHint="@color/color_999999"
+                android:textSize="14dp" />
+
+            <ImageView
+
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_clear"
+                android:visibility="gone" />
+
+            <ImageView
+
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:scaleType="centerInside"
+                android:src="@mipmap/pass_gone" />
+        </LinearLayout>
+
+
+
+
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/bg_btn_login_selected"
+            android:text="更新课程"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/color_ffffff"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="返回"
+                android:textColor="@color/color_b0b8b2"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--</ScrollView>-->
+
+    <LinearLayout
+        android:id="@+id/service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+    </LinearLayout>
+
+</RelativeLayout>
+
